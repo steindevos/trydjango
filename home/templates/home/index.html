@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>waddup w.o.r.l.d! </h1>
+    
+    <ul>
+        
+        {% for contact in contacts %}
+        <li>{{contact.name}} - <a href="mailto:{{contact.email}}?subject='hello there'">{{contact.email}}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
